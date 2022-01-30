@@ -1,0 +1,30 @@
+# COCO 2017 dataset http://cocodataset.org - first 128 training images
+# Train command: python train.py --data coco128.yaml
+# Default dataset location is next to YOLOv5:
+#   /parent_folder
+#     /coco128
+#     /yolov5
+
+
+# download command/URL (optional)
+download: https://github.com/ultralytics/yolov5/releases/download/v1.0/coco128.zip
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+#train: G:/hwc/code/yolov5-master/coco-6-class-12230/images/train2017/  # 128 images
+#val: G:/hwc/code/yolov5-master/coco-6-class-12230/images/val2017/  # 128 images
+#test: G:/hwc/code/yolov5-master/coco-6-class-12230/images/test2017/
+#test: ../coco-6-class-6716/images/tt/
+
+##############苹果数据集###############
+train: G:/hwc/1/dataset/apple-tomato-new/images/train2017/  # 128 images
+val: G:/hwc/1/dataset/apple-tomato-new/images/val2017/  # 128 images
+test: G:/hwc/1/dataset/apple-tomato-new/images/test2017/
+
+
+# number of classes
+nc: 7
+
+# class names
+#names: [ 'knife','bottle','coconut_juice','cola','water','alcohol','scissors','scissor','coconut juice','sodas','juice','sodas(can)']
+#names: [ 'apple_healthy','apple_scab_serious','apple_scab_general','apple_frogeve_spot','cedar_apple_rust_general','cedar_apple_rust_serious' ]
+names: [ 'tomato_leaf_mold_fungus', 'tomato_early_blight_fungus', 'tomato_septoria_leaf_spot_fungus', 'apple_frogeve_spot', 'cedar_apple_rust', 'apple_scab','tomato_late_blight_water_mold']
